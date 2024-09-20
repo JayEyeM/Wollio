@@ -10,7 +10,7 @@ const App = () => {
   return (
     <Flex direction="column" p={2} w={'100vw'} h={'auto'} minHeight="100vh" bg="brand.900" color="white">
       <Navbar />
-      <Box as="main" flex="1" p={4} bg="brand.600" >
+      <Box as="main" flex="1" p={4} bg="brand.900" >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
