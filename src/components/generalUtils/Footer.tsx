@@ -9,7 +9,7 @@ const Footer = () => {
       justify="space-between"
       align="center"
       p={4}
-      bg="brand.900"
+      bg="brand.700"
       color="white"
       mt={6} // Adds margin-top to the footer
       w="100%"
@@ -29,7 +29,9 @@ const Footer = () => {
           </Link>
         </Stack>
       </Stack>
+      <Box bg={'brand.900'} borderRadius={'full'} p={2}>
       <WollioLogo w={8} h={8} />
+      </Box>
       <Box>
         <Text fontSize="sm">Designed with ❤️ using Chakra UI</Text>
       </Box>
