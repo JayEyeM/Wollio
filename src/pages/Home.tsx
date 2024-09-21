@@ -31,6 +31,8 @@ const Home = () => {
   alignItems="center"
   justifyContent="center" 
   gap={4}
+  p={2}
+  overflow={'hidden'}
 >
   <Box flex="1" maxW={{ base: '100%', md: '45%' }} alignSelf="center"> 
     <SlideFadeComponent 
