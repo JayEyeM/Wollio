@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "optimize-svg": "svgo src/assets/icons --config svgo.config.cjs"
+    "optimize-svg": "svgo src/assets/icons/**/*.svg --config svgo.config.cjs"
+    
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",

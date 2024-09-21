@@ -9,14 +9,16 @@ const Footer = () => {
       justify="space-between"
       align="center"
       p={4}
-      bg="brand.700"
+      bg="gray.600"
       color="white"
       mt={6} // Adds margin-top to the footer
       w="100%"
+      borderRadius={'lg'}
     >
       
       <Stack spacing={4} mb={4}>
         <Text>&copy; {new Date().getFullYear()} Wollio. All rights reserved.</Text>
+        <Text>https://github.com/JayEyeM. All rights reserved.</Text>
         <Stack direction="row" spacing={4}>
           <Link href="#" color="brand.500" _hover={{ textDecoration: 'underline' }}>
             Privacy Policy

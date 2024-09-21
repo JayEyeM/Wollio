@@ -12,7 +12,7 @@ const Navbar = () => {
       justify="space-between"
       p={4}
       bg="brand.900"
-      color="white"
+      color="brand.700"
     >
       <Box boxSize={"100px"}>
         <WollioLogo w={20} h={20} />
@@ -24,26 +24,27 @@ const Navbar = () => {
       </Box>
       
       <HStack spacing={4}>
-        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Box as={Link} to="/" color={'brand.500'} _hover={{ color: 'brand.600' }}>
           Home
-        </Link>
-        <Link to="/about" style={{ textDecoration: 'none', color: 'inherit' }}>
-          About
-        </Link>
+        </Box>
+       
+        <Box as={Link} to="/icons" color={'brand.500'} _hover={{ color: 'brand.600' }}>
+          Icons
+        </Box>
+        
         <Menu>
           <MenuButton as={Button} rightIcon={<ChevronDownIcon />} bg="brand.900" color="white">
             More
           </MenuButton>
           <MenuList bg="brand.900">
-            <MenuItem bg="brand.900">
-              <Link to="/instructions" style={{ textDecoration: 'none', color: 'inherit' }}>
-                Instructions
-              </Link>
+            <MenuItem as={Link} to="/instructions" bg="brand.900" color="brand.500" _hover={{ textDecoration: 'none', color: 'brand.600' }}>
+              Instructions
             </MenuItem>
-            <MenuItem bg="brand.900">
-              <Link to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>
-                Contact
-              </Link>
+            <MenuItem as={Link} to="/about" bg="brand.900" color="brand.500" _hover={{ textDecoration: 'none', color: 'brand.600' }}>
+              About
+            </MenuItem>
+            <MenuItem as={Link} to="/contact" bg="brand.900" color="brand.500" _hover={{ textDecoration: 'none', color: 'brand.600' }}>
+              Contact
             </MenuItem>
           </MenuList>
         </Menu>
