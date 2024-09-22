@@ -1,26 +1,35 @@
 import React, { useState } from 'react';
 import { Box, Button, Text } from '@chakra-ui/react';
 import { CloseIcon, ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons';
-import { u } from 'framer-motion/client';
+
 
 interface ClosableBoxProps {
   title: string;
+  titleSize?: string;
+  titleColor?: string;
   buttonText?: string;
   iconOpen?: React.ReactNode;  
   iconClosed?: React.ReactNode; 
   singleIcon?: React.ReactNode;  
   children: React.ReactNode;
   boxShadow?: boolean;
+  bgColor?: string;
+  buttonbgColor?: string;
+
 }
 
 const ClosableBox: React.FC<ClosableBoxProps> = ({
   title,
+  titleSize = '2xl',
+  titleColor = 'white',
   buttonText,
   children,
   boxShadow = true,
   iconOpen = undefined,
   iconClosed = undefined, 
-  singleIcon,  
+  singleIcon,
+  bgColor = '#f9f9f9',
+  buttonbgColor = 'brand.900',
 }) => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -49,9 +58,12 @@ const ClosableBox: React.FC<ClosableBoxProps> = ({
         alignItems={{ base: 'center', md: 'center' }}
       >
         <Button
-          fontSize={"3xl"}
-          bg={"brand.900"}
-          color={"brand.600"}
+          fontSize={titleSize}
+          whiteSpace="normal"     
+          wordBreak="break-word"   
+          overflowWrap="break-word"
+          bg={buttonbgColor}
+          color={titleColor}
           fontFamily={"Sofadi One, sans-serif"}
           boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px;"}
           onClick={handleToggle}
@@ -72,7 +84,7 @@ const ClosableBox: React.FC<ClosableBoxProps> = ({
 
         <Box
           id='closable-box'
-          bg={"brand.900"}
+          bg={bgColor}
           boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px;"}
           borderRadius="lg"
           w={'100%'}
