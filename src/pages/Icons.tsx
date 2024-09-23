@@ -12,7 +12,7 @@ const Icons = () => (
             Icon Sets
         </Heading>
         <Box w={'100%'} m={'auto'} display={'flex'} flexWrap={'wrap'} justifyContent={'center'}>
-            <W01.MoonIcon w={20} h={20} color={'brand.800'} m={2} />
+            <W01.MoonIcon w={20} h={20} color={'brand.800'} m={2}/>
             <W02.MoonIcon02 w={20} h={20} color={'brand.800'} m={2} />
             <W03.MoonIcon03 w={20} h={20} color={'brand.800'} m={2} />
             <W01.SunIcon w={20} h={20} color={'brand.800'} m={2} />
