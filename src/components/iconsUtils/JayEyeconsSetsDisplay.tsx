@@ -35,7 +35,7 @@ const IconSetDisplay: React.FC<{ title: string; icons: Record<string, React.FC<a
       {/* Color Inputs */}
       <Box mb={4} w="100%"  display={"flex"} flexDir={"row"} justifyContent={"center"} alignItems={"flex-end"} gap={4} >
         <FormControl mb={2} display={"flex"} flexDir={"column"}   alignItems={"center"} w={"40%"} >
-          <FormLabel>Icon Background Color</FormLabel>
+          <FormLabel>Background Color</FormLabel>
           <Input
           
             type="color"
@@ -60,7 +60,7 @@ const IconSetDisplay: React.FC<{ title: string; icons: Record<string, React.FC<a
           iconSet={icons}
           bgColor={bgColor}
           iconColor={iconColor}
-          iconNameColor="brand.500"
+          iconNameColor={iconColor}
         />
       </Box>
     </ClosableBox>

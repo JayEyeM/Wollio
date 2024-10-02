@@ -27,6 +27,9 @@ const Icons = () => (
             <W01.AddIcon w={20} h={20} color={'brand.800'} m={2} />
             <W02.AddIcon02 w={20} h={20} color={'brand.800'} m={2} />
             <W03.AddIcon03 w={20} h={20} color={'brand.800'} m={2} />
+            <W01.MinusIcon w={20} h={20} color={'brand.800'} m={2} />
+            <W02.MinusIcon02 w={20} h={20} color={'brand.800'} m={2} />
+            <W03.MinusIcon03 w={20} h={20} color={'brand.800'} m={2} />
         </Box>
         <JayEyeconsSetsDisplay />
     </Box>
