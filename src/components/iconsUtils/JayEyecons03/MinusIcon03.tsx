@@ -3,7 +3,7 @@ import { createIcon } from '@chakra-ui/react';
 
 export const MinusIcon03 = createIcon({
   displayName: 'MinusIcon03',
-  viewBox: '0 0 26.458 26.458',
+  viewBox: '0 -10 26.458 26.458',
   path: [
     <path
       fill="currentColor"

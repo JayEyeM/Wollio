@@ -3,7 +3,7 @@ import { createIcon } from '@chakra-ui/react';
 
 export const EyeOpenIcon03 = createIcon({
   displayName: 'EyeOpenIcon03',
-  viewBox: '0 0 26.458 26.458',
+  viewBox: '0 -3 26.458 26.458',
   path: [
     <path
       fill="currentColor"
